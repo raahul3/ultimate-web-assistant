@@ -1,0 +1,20 @@
+"""
+🔑 Local Configuration Template
+
+1. Copy this file to config_local.py
+2. Add your Perplexity API key below
+3. The server will automatically use your configuration
+"""
+
+class LocalConfig:
+    # Your Perplexity API Key
+    PERPLEXITY_API_KEY = "your-perplexity-api-key-here"
+    
+    # Optional: Customize other settings
+    PERPLEXITY_MODEL = "sonar-pro-online"
+    MAX_TOKENS = 1500
+    TEMPERATURE = 0.7
+    
+    # Server settings
+    DEBUG_MODE = True
+    SERVER_PORT = 5000
