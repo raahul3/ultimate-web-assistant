@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🌟 Ultimate Web Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌟 Web Assistant</h1>
+            <p class="subtitle">AI-powered browsing companion</p>
+        </div>
+
+        <!-- Current Page Info -->
+        <div class="page-info">
+            <h3>📄 Current Page</h3>
+            <div class="page-details">
+                <div class="page-url" id="currentUrl">Loading...</div>
+                <div class="page-title" id="currentTitle">Loading...</div>
+                <div class="page-stats">
+                    <span class="stat">📝 <span id="wordCount">0</span> words</span>
+                    <span class="stat">🔗 <span id="linkCount">0</span> links</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h3>⚡ Quick Actions</h3>
+            <div class="action-grid">
+                <button id="analyzePageBtn" class="action-btn primary">
+                    🔍 Analyze Page
+                </button>
+                <button id="extractDataBtn" class="action-btn secondary">
+                    📝 Extract Data
+                </button>
+                <button id="takeScreenshotBtn" class="action-btn tertiary">
+                    📸 Screenshot
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="chat-section">
+            <h3>💬 AI Chat</h3>
+            <div class="chat-container">
+                <div id="chatMessages" class="chat-messages">
+                    <!-- Messages will be added here -->
+                </div>
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        placeholder="Ask me anything about this page..."
+                        class="chat-input"
+                    >
+                    <button id="sendBtn" class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Tools -->
+        <div class="advanced-tools">
+            <h3>🛠️ Advanced Tools</h3>
+            <div class="tool-grid">
+                <button id="summarizeBtn" class="tool-btn">
+                    📊 Summarize
+                </button>
+                <button id="translateBtn" class="tool-btn">
+                    🌍 Translate
+                </button>
+                <button id="searchBtn" class="tool-btn">
+                    🔍 Search
+                </button>
+                <button id="exportBtn" class="tool-btn">
+                    💾 Export
+                </button>
+            </div>
+        </div>
+
+        <!-- Research Section -->
+        <div class="research-section">
+            <h3>🔬 Research Assistant</h3>
+            <div class="research-container">
+                <input 
+                    type="text" 
+                    id="researchInput" 
+                    placeholder="Enter a topic to research..."
+                    class="research-input"
+                >
+                <button id="researchBtn" class="research-btn">Research</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="status" id="status">
+                ✅ Ready
+            </div>
+            <button id="openDashboardBtn" class="dashboard-btn">
+                🌐 Open Dashboard
+            </button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
