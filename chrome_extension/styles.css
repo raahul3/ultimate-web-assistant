@@ -1,0 +1,446 @@
+/* 🌟 Ultimate Web Assistant - Styles */
+
+/* Popup Container */
+.popup-container {
+    width: 380px;
+    max-height: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    overflow-y: auto;
+}
+
+/* Header */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 5px 0 0 0;
+    color: #64748b;
+    font-size: 0.9em;
+}
+
+/* Page Info */
+.page-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #374151;
+}
+
+.page-details {
+    font-size: 0.85em;
+}
+
+.page-url {
+    color: #4f46e5;
+    font-weight: 500;
+    word-break: break-all;
+    margin-bottom: 5px;
+}
+
+.page-title {
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.page-stats {
+    display: flex;
+    gap: 15px;
+}
+
+.stat {
+    color: #6b7280;
+    font-size: 0.8em;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quick-actions h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #374151;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.action-btn {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.action-btn.primary {
+    background: #4f46e5;
+    color: white;
+}
+
+.action-btn.primary:hover {
+    background: #3b37d1;
+    transform: translateY(-1px);
+}
+
+.action-btn.secondary {
+    background: #059669;
+    color: white;
+}
+
+.action-btn.secondary:hover {
+    background: #047857;
+    transform: translateY(-1px);
+}
+
+.action-btn.tertiary {
+    background: #dc2626;
+    color: white;
+}
+
+.action-btn.tertiary:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+/* Chat Section */
+.chat-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chat-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #374151;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 12px;
+    animation: slideIn 0.3s ease;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.avatar {
+    font-size: 1.2em;
+}
+
+.sender {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.message-content {
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.user-message .message-content {
+    background: #dbeafe;
+    color: #1e40af;
+    margin-left: 30px;
+}
+
+.assistant-message .message-content {
+    background: #f3f4f6;
+    color: #374151;
+    margin-left: 30px;
+}
+
+.chat-input-container {
+    display: flex;
+    gap: 8px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.chat-input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.send-btn {
+    padding: 10px 15px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.send-btn:hover {
+    background: #3b37d1;
+}
+
+/* Advanced Tools */
+.advanced-tools {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.advanced-tools h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #374151;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.tool-btn {
+    padding: 8px 10px;
+    background: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+}
+
+.tool-btn:hover {
+    background: #4b5563;
+    transform: translateY(-1px);
+}
+
+/* Research Section */
+.research-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.research-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #374151;
+}
+
+.research-container {
+    display: flex;
+    gap: 8px;
+}
+
+.research-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+}
+
+.research-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.research-btn {
+    padding: 8px 12px;
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.research-btn:hover {
+    background: #6d28d9;
+}
+
+/* Footer */
+.footer {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-size: 0.8em;
+    color: #059669;
+    font-weight: 500;
+}
+
+.dashboard-btn {
+    padding: 6px 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.dashboard-btn:hover {
+    background: #3b37d1;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar Styling */
+.popup-container::-webkit-scrollbar,
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.popup-container::-webkit-scrollbar-track,
+.chat-messages::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.popup-container::-webkit-scrollbar-thumb,
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.popup-container::-webkit-scrollbar-thumb:hover,
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Content Script Sidebar Styles */
+.web-assistant-sidebar {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.web-assistant-sidebar * {
+    box-sizing: border-box;
+}
+
+.sidebar-toggle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    user-select: none;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .popup-container {
+        width: 100vw;
+        max-width: none;
+    }
+    
+    .action-grid,
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .popup-container {
+        background: white;
+        color: black;
+    }
+    
+    .header {
+        background: #f8f9fa;
+        border-bottom: 2px solid #dee2e6;
+    }
+    
+    .action-btn,
+    .tool-btn,
+    .send-btn,
+    .research-btn,
+    .dashboard-btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
